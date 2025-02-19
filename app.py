@@ -12,8 +12,8 @@ from sklearn.preprocessing import LabelEncoder
 app = dash.Dash(__name__)
 
 # Load and preprocess data
-df = pd.read_csv("C:/Users/RuiYa/MyCourses/data/medicalCostPersonalData/insurance.csv")
-
+#df = pd.read_csv("C:/Users/RuiYa/MyCourses/data/medicalCostPersonalData/insurance.csv")
+df = pd.read_csv("insurance.csv")
 # Create single/family status
 df['single_family'] = np.where(df.children==0, 'single', 'family')
 
