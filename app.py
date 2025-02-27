@@ -10,7 +10,7 @@ from sklearn.preprocessing import LabelEncoder
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
-
+server = app.server
 # Load and preprocess data
 #df = pd.read_csv("C:/Users/RuiYa/MyCourses/data/medicalCostPersonalData/insurance.csv")
 df = pd.read_csv("insurance.csv")
